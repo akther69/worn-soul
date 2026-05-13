@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WORN SOUL</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- AOS Animation -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@next/dist/aos.css"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+
+  <!-- ================= NAVBAR ================= -->
+
+  <nav class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-md z-50 border-b border-gray-900">
+
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <!-- Logo -->
+
+     <div class="flex items-center gap-3">
+
+  <img
+    src="assets/logo/logo.png"
+    class="h-10 md:h-12 object-contain"
+  >
+
+  <h1 class="text-xl md:text-2xl font-bold tracking-[6px]">
+
+    WORN SOUL
+
+  </h1>
+
+</div>
+
+      <!-- Desktop Menu -->
+
+      <ul class="hidden md:flex gap-10 uppercase text-sm tracking-[3px]">
+
+        <li>
+          <a href="#home" class="hover:text-gray-400 transition">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#about" class="hover:text-gray-400 transition">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#collection" class="hover:text-gray-400 transition">
+            Collection
+          </a>
+        </li>
+
+        <li>
+  <a href="#contact" class="hover:text-gray-400 transition">
+    Contact
+  </a>
+</li>
+
+        
+
+      </ul>
+
+      <!-- Mobile Menu Button -->
+
+      <button
+        id="menu-btn"
+        class="md:hidden text-3xl"
+      >
+
+        ☰
+
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden bg-black border-t border-gray-800"
+    >
+
+      <ul class="flex flex-col text-center py-5 uppercase tracking-[3px]">
+
+        <li class="py-4">
+          <a href="#home">Home</a>
+        </li>
+
+         <li class="py-4">
+          <a href="#about">About</a>
+        </li>
+
+        <li class="py-4">
+          <a href="#collection">Collection</a>
+        </li>
+
+        <li class="py-4">
+  <a href="#contact">Contact</a>
+</li>
+
+       
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+<!-- ================= HERO SLIDER ================= -->
+
+<section
+id="home"
+class="relative h-screen overflow-hidden pt-[72px]"
+>
+
+  <!-- Slides Container -->
+
+  <div
+    id="slider"
+    class="flex h-full transition-transform duration-1000"
+  >
+
+    <!-- Slide 1 -->
+
+    <div
+      class="min-w-full h-screen bg-cover bg-center flex items-center justify-center relative"
+      style="background-image:url('assets/images/banner1.jpg')"
+    >
+
+      <div class="absolute inset-0 bg-black/10"></div>
+
+      <div class="relative z-10 text-center px-6">
+
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-[10px]">
+
+          <!-- WORN SOUL -->
+
+        </h1>
+
+        <p class="mt-6 uppercase tracking-[5px] text-gray-300">
+
+          <!-- Simple. Timeless. Yours. -->
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- Slide 2 -->
+
+    <div
+      class="min-w-full h-screen bg-cover bg-center flex items-center justify-center relative"
+      style="background-image:url('assets/images/banner2.jpg')"
+    >
+
+      <div class="absolute inset-0 bg-black/10"></div>
+
+      <div class="relative z-10 text-center px-6">
+
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-[10px]">
+
+          <!-- STREET LUXURY -->
+
+        </h1>
+
+        <p class="mt-6 uppercase tracking-[5px] text-gray-300">
+
+          <!-- Designed For Confidence -->
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- Slide 3 -->
+
+    <div
+      class="min-w-full h-screen bg-cover bg-center flex items-center justify-center relative"
+      style="background-image:url('assets/images/banner3.jpg')"
+    >
+
+      <div class="absolute inset-0 bg-black/10"></div>
+
+      <div class="relative z-10 text-center px-6">
+
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-[10px]">
+
+          <!-- NEW COLLECTION -->
+
+        </h1>
+
+        <p class="mt-6 uppercase tracking-[5px] text-gray-300">
+
+          <!-- Elevate Your Style -->
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section
+  id="about"
+  class="py-32 px-6 bg-[#0a0a0a]"
+>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+    <!-- Left Side Image -->
+
+    <div data-aos="fade-right">
+
+      <img
+        src="assets/images/about.jpg"
+        class="rounded-3xl w-full h-[600px] object-cover"
+      >
+
+    </div>
+
+    <!-- Right Side Content -->
+
+    <div data-aos="fade-left">
+
+      <p class="uppercase tracking-[4px] text-gray-500 text-sm mb-4">
+
+        About Worn Soul
+
+      </p>
+
+      <h2 class="text-4xl md:text-6xl font-bold leading-tight">
+
+        Built From Passion, <br>
+        Designed For Identity.
+
+      </h2>
+
+      <p class="mt-8 text-gray-400 leading-9 text-lg">
+
+        Worn Soul was founded by a group of close friends who shared a deep passion
+        for fashion, individuality, and modern streetwear culture. What started as
+        a vision between friends in Dubai soon evolved into a brand focused on
+        creating timeless pieces that blend minimal luxury with everyday comfort.
+
+      </p>
+
+      <p class="mt-6 text-gray-400 leading-9 text-lg">
+
+        Inspired by global street fashion and contemporary aesthetics, Worn Soul is
+        designed for individuals who value confidence, simplicity, and self-expression.
+        Every collection reflects a balance between premium quality, clean design,
+        and a bold modern identity.
+
+      </p>
+
+      <p class="mt-6 text-gray-400 leading-9 text-lg">
+
+        More than clothing, Worn Soul represents a lifestyle — a movement built for
+        those who wear their story with confidence.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= MOVING COLLECTION ================= -->
+
+<section
+id="collection"
+class="py-24 overflow-hidden"
+>
+
+  <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">
+
+    Collections
+
+  </h2>
+
+  <!-- Moving Track -->
+
+  <div class="marquee">
+
+    <div class="marquee-content">
+
+      <!-- Card -->
+
+      <div class="collection-card">
+
+        <img src="assets/images/oversized.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Oversized</h3>
+
+        </div>
+
+      </div>
+
+      <!-- Card -->
+
+      <div class="collection-card">
+
+        <img src="assets/images/shirts.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Shirts</h3>
+
+        </div>
+
+      </div>
+
+      <!-- Card -->
+
+      <div class="collection-card">
+
+        <img src="assets/images/caps.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Caps</h3>
+
+        </div>
+
+      </div>
+
+      <!-- Card -->
+
+      <div class="collection-card">
+
+        <img src="assets/images/bottoms.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Bottoms</h3>
+
+        </div>
+
+      </div>
+
+      <!-- Card -->
+
+      <div class="collection-card">
+
+        <img src="assets/images/belt.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Belts</h3>
+
+        </div>
+
+      </div>
+
+      <!-- DUPLICATE FOR SMOOTH LOOP -->
+
+      <div class="collection-card">
+
+        <img src="assets/images/oversized.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Oversized</h3>
+
+        </div>
+
+      </div>
+
+      <div class="collection-card">
+
+        <img src="assets/images/shirts.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Shirts</h3>
+
+        </div>
+
+      </div>
+
+      <div class="collection-card">
+
+        <img src="assets/images/caps.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Caps</h3>
+
+        </div>
+
+      </div>
+
+      <div class="collection-card">
+
+        <img src="assets/images/bottoms.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Bottoms</h3>
+
+        </div>
+
+      </div>
+
+      <div class="collection-card">
+
+        <img src="assets/images/belt.jpg">
+
+        <div class="collection-overlay">
+
+          <h3>Belts</h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= EXPLORE BUTTON ================= -->
+
+<section class="py-5 text-center">
+
+  <a
+    href="https://your-shopify-store-link.com"
+    target="_blank"
+    class="store-btn inline-block border border-white px-10 py-5 uppercase tracking-[4px] text-sm rounded-full"
+  >
+
+    Enter Store
+
+  </a>
+
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section
+id="contact"
+class="py-32 px-6 bg-black relative overflow-hidden"
+>
+
+  <!-- Background Glow -->
+
+  <div class="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none">
+
+    <div class="absolute w-72 h-72 bg-white blur-[120px] rounded-full top-20 left-10"></div>
+
+    <div class="absolute w-72 h-72 bg-gray-500 blur-[120px] rounded-full bottom-10 right-10"></div>
+
+  </div>
+
+  <!-- Main Content -->
+
+  <div class="relative z-10 max-w-6xl mx-auto text-center">
+
+    <!-- Small Heading -->
+
+    <p class="uppercase tracking-[5px] text-gray-500 text-sm mb-5">
+
+      Contact
+
+    </p>
+
+    <!-- Main Heading -->
+
+    <h2 class="text-5xl md:text-7xl font-bold leading-tight">
+
+      Let’s Connect
+
+    </h2>
+
+    <!-- Description -->
+
+    <p class="text-gray-400 mt-8 text-lg leading-8 max-w-2xl mx-auto">
+
+      For collaborations, orders, inquiries, or creative partnerships,
+      connect with Worn Soul through our official channels.
+
+    </p>
+
+    <!-- Contact Cards -->
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-24">
+
+      <!-- Instagram Card -->
+
+      <a
+        href="https://www.instagram.com/1wornsoul?igsh=MWNxc2w4OG10aHcwNA=="
+        target="_blank"
+        class="group border border-gray-800 bg-[#0f0f0f] rounded-[30px] p-10 hover:border-white hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] transition duration-500"
+      >
+
+        <!-- Icon -->
+
+        <div class="mb-6 flex justify-center">
+
+          <i class="fa-brands fa-instagram text-5xl"></i>
+
+        </div>
+
+        <!-- Title -->
+
+        <h3 class="text-3xl font-bold mb-4">
+
+          Instagram
+
+        </h3>
+
+        <!-- Username -->
+
+        <p class="text-gray-400 group-hover:text-white transition">
+
+          @1wornsoul
+
+        </p>
+
+      </a>
+
+      <!-- WhatsApp Card -->
+
+      <a
+        href="https://wa.me/971505145887"
+        target="_blank"
+        class="group border border-gray-800 bg-[#0f0f0f] rounded-[30px] p-10 hover:border-white hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] transition duration-500"
+      >
+
+        <!-- Icon -->
+
+        <div class="mb-6 flex justify-center">
+
+          <i class="fa-brands fa-whatsapp text-5xl"></i>
+
+        </div>
+
+        <!-- Title -->
+
+        <h3 class="text-3xl font-bold mb-4">
+
+          WhatsApp
+
+        </h3>
+
+        <!-- Number -->
+
+        <p class="text-gray-400 group-hover:text-white transition">
+
+          +971 50 514 5887
+
+        </p>
+
+      </a>
+
+      <!-- Email Card -->
+
+      <a
+        href="mailto:ssuhaibakther12@gmail.com"
+        class="group border border-gray-800 bg-[#0f0f0f] rounded-[30px] p-10 hover:border-white hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] transition duration-500"
+      >
+
+        <!-- Icon -->
+
+        <div class="mb-6 flex justify-center">
+
+          <i class="fa-solid fa-envelope text-5xl"></i>
+
+        </div>
+
+        <!-- Title -->
+
+        <h3 class="text-3xl font-bold mb-4">
+
+          Email
+
+        </h3>
+
+        <!-- Email -->
+
+        <p class="text-gray-400 break-all group-hover:text-white transition">
+
+          ssuhaibakther12@gmail.com
+
+        </p>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+  
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="border-t border-gray-800 py-12 text-center">
+
+    <h2 class="text-3xl font-bold tracking-[5px]">
+
+      WORN SOUL
+
+    </h2>
+
+    <p class="text-gray-500 mt-5 uppercase tracking-[3px] text-sm">
+
+      Simple. Timeless. Yours.
+
+    </p>
+
+  </footer>
+
+  <!-- AOS -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Main JS -->
+
+  <script src="js/main.js"></script>
+
+<script>
+
+  lucide.createIcons();
+
+</script>  
+
+</body>
+
+</html>
