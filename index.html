@@ -152,17 +152,34 @@ class="relative overflow-hidden pt-[72px]"
 
   <div
     id="slider"
-    class="flex h-full transition-transform duration-1000"
+    class="flex transition-transform duration-1000"
   >
 
-    <!-- Slide 1 -->
+    <!-- ================= SLIDE 1 ================= -->
 
     <div
-      class="min-w-full h-[100svh] bg-cover bg-[center_right_35%] md:bg-center flex items-center justify-center relative"
-      style="background-image:url('assets/images/banner1.jpg')"
+      class="min-w-full h-[100svh] flex items-center justify-center relative overflow-hidden"
     >
 
+      <!-- Desktop Banner -->
+
+      <div
+        class="hidden md:block absolute inset-0 bg-cover bg-center"
+        style="background-image:url('assets/images/banner1.jpg')"
+      ></div>
+
+      <!-- Mobile Banner -->
+
+      <div
+        class="block md:hidden absolute inset-0 bg-cover bg-center"
+        style="background-image:url('assets/images/banner1-mobile.jpg')"
+      ></div>
+
+      <!-- Overlay -->
+
       <div class="absolute inset-0 bg-black/10"></div>
+
+      <!-- Optional Text -->
 
       <div class="relative z-10 text-center px-6">
 
@@ -182,14 +199,31 @@ class="relative overflow-hidden pt-[72px]"
 
     </div>
 
-    <!-- Slide 2 -->
+    <!-- ================= SLIDE 2 ================= -->
 
     <div
-      class="min-w-full h-[100svh] bg-cover bg-[center_right_35%] md:bg-center flex items-center justify-center relative"
-      style="background-image:url('assets/images/banner2.jpg')"
+      class="min-w-full h-[100svh] flex items-center justify-center relative overflow-hidden"
     >
 
+      <!-- Desktop Banner -->
+
+      <div
+        class="hidden md:block absolute inset-0 bg-cover bg-center"
+        style="background-image:url('assets/images/banner2.jpg')"
+      ></div>
+
+      <!-- Mobile Banner -->
+
+      <div
+        class="block md:hidden absolute inset-0 bg-cover bg-center"
+        style="background-image:url('assets/images/banner2-mobile.jpg')"
+      ></div>
+
+      <!-- Overlay -->
+
       <div class="absolute inset-0 bg-black/10"></div>
+
+      <!-- Optional Text -->
 
       <div class="relative z-10 text-center px-6">
 
@@ -209,14 +243,31 @@ class="relative overflow-hidden pt-[72px]"
 
     </div>
 
-    <!-- Slide 3 -->
+    <!-- ================= SLIDE 3 ================= -->
 
     <div
-      class="min-w-full h-[100svh] bg-cover bg-[center_right_35%] md:bg-center flex items-center justify-center relative"
-      style="background-image:url('assets/images/banner3.jpg')"
+      class="min-w-full h-[100svh] flex items-center justify-center relative overflow-hidden"
     >
 
+      <!-- Desktop Banner -->
+
+      <div
+        class="hidden md:block absolute inset-0 bg-cover bg-center"
+        style="background-image:url('assets/images/banner3.jpg')"
+      ></div>
+
+      <!-- Mobile Banner -->
+
+      <div
+        class="block md:hidden absolute inset-0 bg-cover bg-center"
+        style="background-image:url('assets/images/banner3-mobile.jpg')"
+      ></div>
+
+      <!-- Overlay -->
+
       <div class="absolute inset-0 bg-black/10"></div>
+
+      <!-- Optional Text -->
 
       <div class="relative z-10 text-center px-6">
 
@@ -239,7 +290,6 @@ class="relative overflow-hidden pt-[72px]"
   </div>
 
 </section>
-
 
 <!-- ================= ABOUT SECTION ================= -->
 
