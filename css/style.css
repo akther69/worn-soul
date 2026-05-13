@@ -205,3 +205,26 @@ a{
     }
 
 }
+
+
+/* ========================= */
+/* MOBILE HERO FIX */
+/* ========================= */
+
+@media(max-width:768px){
+
+    #home h1{
+
+        font-size:55px !important;
+        letter-spacing:4px !important;
+
+    }
+
+    #home p{
+
+        font-size:12px;
+        letter-spacing:3px !important;
+
+    }
+
+}
