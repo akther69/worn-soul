@@ -351,8 +351,9 @@ class="py-20 px-12 bg-black overflow-hidden"
   <!-- Horizontal Scroll -->
 
   <div
-    class="flex gap-6 overflow-x-auto px-6 pb-4 snap-x snap-mandatory scrollbar-hide"
-  >
+  id="new-arrival-slider"
+  class="flex gap-6 overflow-x-auto px-6 pb-4 snap-x snap-mandatory scrollbar-hide"
+>
 
     <!-- ================= PRODUCT 1 ================= -->
 
@@ -530,6 +531,25 @@ class="py-20 px-12 bg-black overflow-hidden"
     </a>
 
   </div>
+  <!-- ================= NEW ARRIVAL INDICATORS ================= -->
+
+<div class="flex justify-center items-center gap-4 mt-8">
+
+  <!-- Active -->
+
+  <div class="new-indicator w-14 h-1 bg-white rounded-full shadow-lg transition-all duration-300"></div>
+
+  <!-- Others -->
+
+  <div class="new-indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+  <div class="new-indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+  <div class="new-indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+  <div class="new-indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+</div>
 
 </section>
 
@@ -561,9 +581,10 @@ class="py-10 px-12 bg-black overflow-hidden"
 
   <!-- Horizontal Scroll -->
 
-  <div
-    class="flex gap-6 overflow-x-auto px-6 pb-4 snap-x snap-mandatory scrollbar-hide"
-  >
+ <div
+  id="best-seller-slider"
+  class="flex gap-6 overflow-x-auto px-6 pb-4 snap-x snap-mandatory scrollbar-hide"
+>
 
     <!-- ================= PRODUCT 1 ================= -->
 
@@ -714,6 +735,23 @@ class="py-10 px-12 bg-black overflow-hidden"
     </a>
 
   </div>
+  <!-- ================= BEST SELLER INDICATORS ================= -->
+
+<div class="flex justify-center items-center gap-4 mt-8">
+
+  <!-- Active -->
+
+  <div class="best-indicator w-14 h-1 bg-white rounded-full shadow-lg transition-all duration-300"></div>
+
+  <!-- Others -->
+
+  <div class="best-indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+  <div class="best-indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+  <div class="best-indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+</div>
 
 </section>
 
@@ -994,7 +1032,7 @@ class="py-20 bg-black overflow-hidden"
 
 <section
 id="testimonials"
-class="py-10 px-12 bg-black overflow-hidden"
+class="py-16 px-4 md:px-12 bg-black overflow-hidden"
 >
 
   <!-- Heading -->
@@ -1018,24 +1056,21 @@ class="py-10 px-12 bg-black overflow-hidden"
   <!-- Horizontal Scroll -->
 
   <div
+    id="testimonial-slider"
     class="flex gap-6 overflow-x-auto px-6 pb-4 snap-x snap-mandatory scrollbar-hide"
   >
 
     <!-- ================= TESTIMONIAL 1 ================= -->
 
     <div
-      class="min-w-[320px] md:min-w-[420px] bg-[#111] border border-gray-800 rounded-[35px] p-10 snap-start"
+      class="min-w-[320px] md:min-w-[420px] bg-[#111] border border-gray-800 rounded-[35px] p-8 snap-start"
     >
-
-      <!-- Quote -->
 
       <p class="text-2xl leading-10 text-gray-200">
 
         “The quality feels premium and the fit is exactly what modern streetwear should be.”
 
       </p>
-
-      <!-- User -->
 
       <div class="mt-10">
 
@@ -1058,18 +1093,14 @@ class="py-10 px-12 bg-black overflow-hidden"
     <!-- ================= TESTIMONIAL 2 ================= -->
 
     <div
-      class="min-w-[320px] md:min-w-[420px] bg-[#111] border border-gray-800 rounded-[35px] p-10 snap-start"
+      class="min-w-[320px] md:min-w-[420px] bg-[#111] border border-gray-800 rounded-[35px] p-8 snap-start"
     >
-
-      <!-- Quote -->
 
       <p class="text-2xl leading-10 text-gray-200">
 
         “Minimal, clean, and bold. Worn Soul has the perfect Gen-Z luxury vibe.”
 
       </p>
-
-      <!-- User -->
 
       <div class="mt-10">
 
@@ -1092,18 +1123,14 @@ class="py-10 px-12 bg-black overflow-hidden"
     <!-- ================= TESTIMONIAL 3 ================= -->
 
     <div
-      class="min-w-[320px] md:min-w-[420px] bg-[#111] border border-gray-800 rounded-[35px] p-10 snap-start"
+      class="min-w-[320px] md:min-w-[420px] bg-[#111] border border-gray-800 rounded-[35px] p-8 snap-start"
     >
-
-      <!-- Quote -->
 
       <p class="text-2xl leading-10 text-gray-200">
 
         “Finally a brand that balances oversized comfort with a premium aesthetic.”
 
       </p>
-
-      <!-- User -->
 
       <div class="mt-10">
 
@@ -1126,18 +1153,14 @@ class="py-10 px-12 bg-black overflow-hidden"
     <!-- ================= TESTIMONIAL 4 ================= -->
 
     <div
-      class="min-w-[320px] md:min-w-[420px] bg-[#111] border border-gray-800 rounded-[35px] p-10 snap-start"
+      class="min-w-[320px] md:min-w-[420px] bg-[#111] border border-gray-800 rounded-[35px] p-8 snap-start"
     >
-
-      <!-- Quote -->
 
       <p class="text-2xl leading-10 text-gray-200">
 
         “Every piece feels thoughtfully designed. Simple but powerful.”
 
       </p>
-
-      <!-- User -->
 
       <div class="mt-10">
 
@@ -1159,7 +1182,26 @@ class="py-10 px-12 bg-black overflow-hidden"
 
   </div>
 
+  <!-- ================= SLIDER INDICATORS ================= -->
+
+  <div class="flex justify-center items-center gap-4 mt-8">
+
+    <!-- Active -->
+
+    <div class="indicator w-14 h-1 bg-white rounded-full shadow-lg transition-all duration-300"></div>
+
+    <!-- Others -->
+
+    <div class="indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+    <div class="indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+    <div class="indicator w-7 h-1 bg-gray-500 rounded-full transition-all duration-300"></div>
+
+  </div>
+
 </section>
+
 
 <!-- ================= CONTACT SECTION ================= -->
 
