@@ -297,3 +297,27 @@ a{
 
 
 
+/* ========================= */
+/* MOBILE VIEWPORT FIX */
+/* ========================= */
+
+html,
+body{
+
+    overflow-x:hidden;
+
+}
+
+body{
+
+    position:relative;
+
+}
+
+/* Fix mobile viewport rendering */
+
+#home{
+
+    overflow:visible !important;
+
+}
